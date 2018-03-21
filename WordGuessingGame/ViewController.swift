@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func StartGame(_ sender: Any) {
+        print("Start button is pressed")
+    }
+    @IBAction func ShowAbout(_ sender: Any) {
+        print("Avout button is pressed")
+    }
 }
 
