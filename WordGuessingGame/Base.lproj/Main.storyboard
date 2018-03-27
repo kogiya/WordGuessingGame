@@ -411,7 +411,7 @@ Kie Ogiya</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="exit.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ngA-N9-usF"/>
+                                    <action selector="backToStart:" destination="khD-bQ-smi" eventType="touchUpInside" id="vOu-or-9wg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-o2-78I">
@@ -461,7 +461,4 @@ Kie Ogiya</string>
         <image name="help.png" width="89" height="86"/>
         <image name="start.png" width="344" height="87"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ngA-N9-usF"/>
-    </inferredMetricsTieBreakers>
 </document>
