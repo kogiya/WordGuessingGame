@@ -125,7 +125,7 @@ Kie Ogiya</string>
         <!--View Controller-->
         <scene sceneID="ZSM-db-rlZ">
             <objects>
-                <viewController id="khD-bQ-smi" sceneMemberID="viewController">
+                <viewController id="khD-bQ-smi" customClass="ViewController" customModule="WordGuessingGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ppY-zh-VwQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -402,20 +402,26 @@ Kie Ogiya</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-o2-78I">
-                                <rect key="frame" x="240" y="598" width="50" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="help.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-bL-a2f">
-                                <rect key="frame" x="299" y="598" width="50" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="exit.png"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-7A-jTl">
                                 <rect key="frame" x="51" y="220" width="55" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wJ-Jx-XKJ">
+                                <rect key="frame" x="303" y="598" width="50" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="exit.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ngA-N9-usF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-o2-78I">
+                                <rect key="frame" x="240" y="598" width="50" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="help.png"/>
+                                <connections>
+                                    <action selector="showInstructions:" destination="khD-bQ-smi" eventType="touchUpInside" id="aGF-xM-JtH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vN6-hZ-DrB"/>
@@ -455,4 +461,7 @@ Kie Ogiya</string>
         <image name="help.png" width="89" height="86"/>
         <image name="start.png" width="344" height="87"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ngA-N9-usF"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func showInstructions(_ sender: UIButton) {
+        //Alert title and content
+        let alertController = UIAlertController(title: "Instructions", message: "Try to guess the secret word one letter at a time! If you guess an incorrect letter, the bee will pop one balloon. To win, spell the word before the bee pops all balloons!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        //Buttons
+        alertController.addAction(UIAlertAction(title: "Back to the game", style: UIAlertActionStyle.default, handler: nil))
+        
+        //Show alert
+        self.present(alertController, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
