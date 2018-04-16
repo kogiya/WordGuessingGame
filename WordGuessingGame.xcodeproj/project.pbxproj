@@ -14,6 +14,7 @@
 		AC192D2B2060B7FF00F6D24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC192D292060B7FF00F6D24D /* LaunchScreen.storyboard */; };
 		AC192D362060B7FF00F6D24D /* WordGuessingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC192D352060B7FF00F6D24D /* WordGuessingGameTests.swift */; };
 		AC192D412060B7FF00F6D24D /* WordGuessingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC192D402060B7FF00F6D24D /* WordGuessingGameUITests.swift */; };
+		AC44D62020846D8800DB4957 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44D61F20846D8800DB4957 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC192D3C2060B7FF00F6D24D /* WordGuessingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGuessingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC192D402060B7FF00F6D24D /* WordGuessingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGuessingGameUITests.swift; sourceTree = "<group>"; };
 		AC192D422060B7FF00F6D24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC44D61F20846D8800DB4957 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AC192D272060B7FF00F6D24D /* Assets.xcassets */,
 				AC192D292060B7FF00F6D24D /* LaunchScreen.storyboard */,
 				AC192D2C2060B7FF00F6D24D /* Info.plist */,
+				AC44D61F20846D8800DB4957 /* Word.swift */,
 			);
 			path = WordGuessingGame;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				AC192D232060B7FE00F6D24D /* ViewController.swift in Sources */,
 				AC192D212060B7FE00F6D24D /* AppDelegate.swift in Sources */,
+				AC44D62020846D8800DB4957 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

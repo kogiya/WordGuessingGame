@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SQLite3
 
 class ViewController: UIViewController {
+    
+    var db: OpaquePointer?
 
     @IBAction func backToStart(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -28,7 +31,45 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //createing database file
+        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            .appendingPathComponent("WordBankDatabase.sqlite")
+        
+        //opening the database
+        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
+            print("error opening database")
+        }
+        
+        //creating table
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS WordBank (id INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT, category TEXT)", nil, nil, nil) != SQLITE_OK {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error creating table: \(errmsg)")
+        }
+        
+        //creating a statement
+        var stmt: OpaquePointer?
+        
+        //insert query
+        let queryString = "INSERT INTO WordBank (word, category)VALUES('apple', 'fruit'),('orange', 'fruit'), ('banana', 'fruit'), ('dog', 'animal'), ('cat', 'animal'), ('elephant', 'animal'), ('red', 'color'), ('green', 'color'), ('pink', 'color'), ('tennis', 'sport'), ('soccer', 'sport'), ('baseball', 'sport')"
+        
+        print(queryString)
+        
+        //preparing the query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        //execute the query to insert values
+        if sqlite3_step(stmt) != SQLITE_DONE {
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("failure inserting word: \(errmsg)")
+            return
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,5 +83,7 @@ class ViewController: UIViewController {
     @IBAction func ShowAbout(_ sender: Any) {
         print("Avout button is pressed")
     }
+    
+  
 }
 
