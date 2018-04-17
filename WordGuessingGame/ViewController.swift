@@ -50,54 +50,129 @@ class ViewController: UIViewController {
         sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnB(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnC(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnD(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnE(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnF(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnG(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnH(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnI(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnJ(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnK(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnL(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnM(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnN(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnO(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnP(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnQ(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnR(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnS(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnT(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnU(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnV(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnW(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnX(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnY(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
     @IBAction func btnZ(_ sender: UIButton) {
+        checkGuess(button: sender)
+        sender.isEnabled = false;
+        sender.setTitleColor(UIColor.clear, for: .disabled)
     }
 
     //Balloons
@@ -200,7 +275,9 @@ class ViewController: UIViewController {
     func checkGuess(button:UIButton){
         if isInWord(letter: button){
             if lettersFound == word.word.count{
-                print("User won")
+                
+                showAlert(title: "Congratulations", message: "You won the game!")
+                
             }
         } else {
             //pop a balloon
@@ -212,7 +289,7 @@ class ViewController: UIViewController {
             guessCurIndex = guessCurIndex + 1
             
             if guessCurIndex == 6 {
-                print("game over")
+                showAlert(title: "Game Over", message: "You lost the game! The word was \"\(word.word.uppercased())\"!")
             }
             else {
                 imgBeesArr[guessCurIndex].isHidden = false;
@@ -232,6 +309,17 @@ class ViewController: UIViewController {
         
         print(indexes)
         return indexes
+    }
+    
+    func showAlert(title:String, message:String){
+        //Alert title and content
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        //Buttons
+        alertController.addAction(UIAlertAction(title: "Play again", style: UIAlertActionStyle.default, handler: nil))
+        
+        //Show alert
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }
