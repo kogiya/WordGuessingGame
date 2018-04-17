@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		878F4FFA20864CBB0057D840 /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F4FF920864CBB0057D840 /* DbManager.swift */; };
+		878F4FFC20865AF40057D840 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F4FFB20865AF40057D840 /* StartViewController.swift */; };
 		AC192D212060B7FE00F6D24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC192D202060B7FE00F6D24D /* AppDelegate.swift */; };
 		AC192D232060B7FE00F6D24D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC192D222060B7FE00F6D24D /* ViewController.swift */; };
 		AC192D262060B7FE00F6D24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC192D242060B7FE00F6D24D /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		878F4FF920864CBB0057D840 /* DbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
+		878F4FFB20865AF40057D840 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		AC192D1D2060B7FE00F6D24D /* WordGuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC192D202060B7FE00F6D24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC192D222060B7FE00F6D24D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				AC192D292060B7FF00F6D24D /* LaunchScreen.storyboard */,
 				AC192D2C2060B7FF00F6D24D /* Info.plist */,
 				AC44D61F20846D8800DB4957 /* Word.swift */,
+				878F4FF920864CBB0057D840 /* DbManager.swift */,
+				878F4FFB20865AF40057D840 /* StartViewController.swift */,
 			);
 			path = WordGuessingGame;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878F4FFC20865AF40057D840 /* StartViewController.swift in Sources */,
 				AC192D232060B7FE00F6D24D /* ViewController.swift in Sources */,
 				AC192D212060B7FE00F6D24D /* AppDelegate.swift in Sources */,
 				AC44D62020846D8800DB4957 /* Word.swift in Sources */,
+				878F4FFA20864CBB0057D840 /* DbManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
