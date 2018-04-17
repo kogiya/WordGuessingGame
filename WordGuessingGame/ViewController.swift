@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     var db: DbManager?
     var wordList = [Word]()
     var word:Word!;
-    var lettersFound = 0;
-    var guessCurIndex = 0;
+    var lettersFound:Int!;
+    var guessCurIndex:Int!;
     
     @IBOutlet weak var lblWord: UILabel!
     @IBOutlet weak var lblCategory: UILabel!
@@ -174,7 +174,7 @@ class ViewController: UIViewController {
         sender.isEnabled = false;
         sender.setTitleColor(UIColor.clear, for: .disabled)
     }
-
+    
     //Balloons
     @IBOutlet weak var balloon1: UIImageView!
     @IBOutlet weak var balloon2: UIImageView!
@@ -220,9 +220,26 @@ class ViewController: UIViewController {
         lblUnderscoresArr = [u1, u2, u3, u4, u5, u6, u7, u8]
         imgBeesArr = [bee1, bee2, bee3, bee4, bee5, bee6]
         imgBalloonsArr = [balloon1, balloon2, balloon3, balloon4, balloon5, balloon6]
+        lettersFound = 0;
+        guessCurIndex = 0;
         
         //Select a random word
         word = (db?.selectRandom())!
+        
+//        //Hide all underscores
+//        for i in 0..<lblUnderscoresArr.count {
+//            lblUnderscoresArr[i].isHidden = true;
+//        }
+//
+//        //Show all balloons and hiding all bees
+//        for i in 0..<imgBeesArr.count{
+//            imgBeesArr[i].isHidden = true;
+//            imgBalloonsArr[i].isHidden = false;
+//        }
+//        //show first bee
+//        imgBeesArr[0].isHidden = false;
+//
+//
         
         //print hint to the category label
         lblCategory.text = word?.category
@@ -277,6 +294,8 @@ class ViewController: UIViewController {
             if lettersFound == word.word.count{
                 
                 showAlert(title: "Congratulations", message: "You won the game!")
+                loadView()
+                viewDidLoad()
                 
             }
         } else {
@@ -290,6 +309,8 @@ class ViewController: UIViewController {
             
             if guessCurIndex == 6 {
                 showAlert(title: "Game Over", message: "You lost the game! The word was \"\(word.word.uppercased())\"!")
+                loadView()
+                viewDidLoad()
             }
             else {
                 imgBeesArr[guessCurIndex].isHidden = false;
