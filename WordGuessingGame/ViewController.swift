@@ -64,55 +64,6 @@ class ViewController: UIViewController {
         lblLettersArr = [l1, l2, l3, l4, l5, l6, l7, l8]
         lblUnderscoresArr = [u1, u2, u3, u4, u5, u6, u7, u8]
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
-//        //createing database file
-//        let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-//            .appendingPathComponent("WordBankDatabase.sqlite")
-//
-//        //opening the database
-//        if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
-//            print("error opening database")
-//        }
-//
-//        //creating table
-//        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS WordBank (id INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT, category TEXT)", nil, nil, nil) != SQLITE_OK {
-//            let errmsg = String(cString: sqlite3_errmsg(db)!)
-//            print("error creating table: \(errmsg)")
-//        }
-//
-//        //creating a statement
-//        var stmt: OpaquePointer?
-//
-//        //insert query
-//        let queryString = "INSERT INTO WordBank (word, category)VALUES('apple', 'fruit'),('orange', 'fruit'), ('banana', 'fruit'), ('dog', 'animal'), ('cat', 'animal'), ('elephant', 'animal'), ('red', 'color'), ('green', 'color'), ('pink', 'color'), ('tennis', 'sport'), ('soccer', 'sport'), ('baseball', 'sport')"
-//
-//        print(queryString)
-//
-//        //preparing the query
-//        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-//            let errmsg = String(cString: sqlite3_errmsg(db)!)
-//            print("error preparing insert: \(errmsg)")
-//            return
-//        }
-//
-//        //execute the query to insert values
-//        if sqlite3_step(stmt) != SQLITE_DONE {
-//            let errmsg = String(cString: sqlite3_errmsg(db)!)
-//            print("failure inserting word: \(errmsg)")
-//            return
-//        }
-        
-//        readValues()
-//
-//        let countWordBankRow = wordList.count
-//        let randomId = arc4random_uniform(UInt32(countWordBankRow))
-//        let selectedWord = wordList[Int(randomId)]
-
-        //********************** cannot display category 
-//        lblCategory.text = selectedWord.category
-        
-        
         //Select a random word
         var word:Word = (db?.selectRandom())!
         
@@ -122,12 +73,16 @@ class ViewController: UIViewController {
         //Print underscores
         var numOfCharacters = word.word.count
         print(word.word)
-//        lblWord.text = ""
-//        for i in 0 ..< numOfCharacters {
-//            lblWord.text = lblWord.text! + " _ "
-//        }
+        for i in 0 ..< numOfCharacters {
+            lblUnderscoresArr[i].isHidden = false;
+            let myWord = Array(word.word.characters)
+            lblLettersArr[i].text = String(myWord[i]).uppercased()
+        }
         
-        
+        //Hide all letters in the word
+        for i in 0 ..< lblLettersArr.count {
+            lblLettersArr[i].isHidden = true;
+        }
     }
     
 
