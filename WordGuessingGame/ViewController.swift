@@ -12,7 +12,11 @@ import SQLite3
 class ViewController: UIViewController {
     
     var db: OpaquePointer?
+    var wordList = [Word]()
 
+    @IBOutlet weak var lblWord: UILabel!
+    @IBOutlet weak var lblCategory: UILabel!
+    
     @IBAction func backToStart(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         
@@ -68,6 +72,17 @@ class ViewController: UIViewController {
             print("failure inserting word: \(errmsg)")
             return
         }
+        
+        readValues()
+        
+        let countWordBankRow = wordList.count
+        let randomId = arc4random_uniform(UInt32(countWordBankRow))
+        let selectedWord = wordList[Int(randomId)]
+
+        //********************** cannot display category 
+//        lblCategory.text = selectedWord.category
+        
+        
     }
     
 
@@ -84,6 +99,34 @@ class ViewController: UIViewController {
         print("Avout button is pressed")
     }
     
-  
+    func readValues(){
+        //empty the list of words
+        wordList.removeAll()
+        
+        //select query
+        let queryString = "SELECT * FROM WordBank"
+        
+        //statement pointer
+        var stmt: OpaquePointer?
+        
+        //preparing the query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        //traversing through all the records
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            let id = sqlite3_column_int(stmt, 0)
+            let word = String(cString: sqlite3_column_text(stmt, 1))
+            let category = String(cString: sqlite3_column_text(stmt, 2))
+            
+            //adding values to list
+            wordList.append(Word(id: Int(id), word: String(word), category: String(category)))
+        }
+    }
+    
+    
 }
 

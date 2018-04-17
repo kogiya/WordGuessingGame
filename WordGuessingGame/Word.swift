@@ -10,8 +10,8 @@ import Foundation
 
 class Word {
     var id: Int
-    var word: String?
-    var category: String?
+    var word: String!
+    var category: String!
     
     init(id: Int, word: String?, category: String?){
         self.id = id
