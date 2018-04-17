@@ -127,7 +127,7 @@ Kie Ogiya</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green_Balloon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hON-pf-8gf">
-                                <rect key="frame" x="79" y="130" width="80" height="165"/>
+                                <rect key="frame" x="75" y="130" width="80" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Yellow_Balloon.png" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-EZ-5ja">
@@ -154,6 +154,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="A">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnA:" destination="khD-bQ-smi" eventType="touchUpInside" id="31b-H2-ME3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zO-sR-njg">
                                 <rect key="frame" x="85" y="382" width="45" height="45"/>
@@ -163,6 +166,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="B">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnB:" destination="khD-bQ-smi" eventType="touchUpInside" id="FEd-NC-0ZF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thb-sn-mwp">
                                 <rect key="frame" x="138" y="382" width="45" height="45"/>
@@ -172,6 +178,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="C">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnC:" destination="khD-bQ-smi" eventType="touchUpInside" id="hf7-gw-IPS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="355-Pf-bAk">
                                 <rect key="frame" x="191" y="382" width="45" height="45"/>
@@ -181,6 +190,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="D">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnD:" destination="khD-bQ-smi" eventType="touchUpInside" id="9JV-td-73y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg9-tS-X0X">
                                 <rect key="frame" x="245" y="382" width="45" height="45"/>
@@ -190,6 +202,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="E">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnE:" destination="khD-bQ-smi" eventType="touchUpInside" id="jtZ-1C-Esj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnI-iu-2ww">
                                 <rect key="frame" x="298" y="382" width="45" height="45"/>
@@ -199,6 +214,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="F">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnF:" destination="khD-bQ-smi" eventType="touchUpInside" id="2F1-fJ-jm2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ef-Kh-S1X">
                                 <rect key="frame" x="86" y="435" width="45" height="45"/>
@@ -208,6 +226,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="H">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnH:" destination="khD-bQ-smi" eventType="touchUpInside" id="oed-TY-xBb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-BY-JNb">
                                 <rect key="frame" x="30" y="435" width="45" height="45"/>
@@ -217,6 +238,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="G">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnG:" destination="khD-bQ-smi" eventType="touchUpInside" id="i8d-Ni-QUO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKb-FA-3XO">
                                 <rect key="frame" x="139" y="435" width="45" height="45"/>
@@ -226,6 +250,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="I">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnI:" destination="khD-bQ-smi" eventType="touchUpInside" id="518-MM-uMx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-Mb-1sP">
                                 <rect key="frame" x="192" y="435" width="45" height="45"/>
@@ -235,6 +262,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="J">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnJ:" destination="khD-bQ-smi" eventType="touchUpInside" id="okm-Hl-Xk0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeV-lb-IIb">
                                 <rect key="frame" x="246" y="435" width="45" height="45"/>
@@ -244,6 +274,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="K">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnK:" destination="khD-bQ-smi" eventType="touchUpInside" id="4oP-r6-5hE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-3t-pYP">
                                 <rect key="frame" x="299" y="435" width="45" height="45"/>
@@ -253,6 +286,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="L">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnL:" destination="khD-bQ-smi" eventType="touchUpInside" id="3ES-hx-zyz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5w-NW-2K7">
                                 <rect key="frame" x="85" y="488" width="45" height="45"/>
@@ -262,6 +298,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="N">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnN:" destination="khD-bQ-smi" eventType="touchUpInside" id="6f7-g4-vNH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63I-eq-TGD">
                                 <rect key="frame" x="29" y="488" width="45" height="45"/>
@@ -271,6 +310,10 @@ Kie Ogiya</string>
                                 <state key="normal" title="M">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnL:" destination="khD-bQ-smi" eventType="touchUpInside" id="OYk-yR-AWD"/>
+                                    <action selector="btnM:" destination="khD-bQ-smi" eventType="touchUpInside" id="rzG-Yi-d2v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwg-9b-smB">
                                 <rect key="frame" x="138" y="488" width="45" height="45"/>
@@ -280,6 +323,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="O">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnO:" destination="khD-bQ-smi" eventType="touchUpInside" id="D9I-hq-gr9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MJ-Ed-Bjj">
                                 <rect key="frame" x="191" y="488" width="45" height="45"/>
@@ -289,6 +335,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="P">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnP:" destination="khD-bQ-smi" eventType="touchUpInside" id="0SU-2G-HWk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNk-ZS-1V4">
                                 <rect key="frame" x="245" y="488" width="45" height="45"/>
@@ -298,6 +347,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="Q">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnQ:" destination="khD-bQ-smi" eventType="touchUpInside" id="PJ7-vG-PbC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC0-KW-aM6">
                                 <rect key="frame" x="298" y="488" width="45" height="45"/>
@@ -307,6 +359,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="R">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnR:" destination="khD-bQ-smi" eventType="touchUpInside" id="QfO-NT-JJ7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGR-Zk-Mnw">
                                 <rect key="frame" x="85" y="541" width="45" height="45"/>
@@ -316,6 +371,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="T">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnT:" destination="khD-bQ-smi" eventType="touchUpInside" id="8By-bH-TpT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1s-Fi-x2l">
                                 <rect key="frame" x="29" y="541" width="45" height="45"/>
@@ -325,6 +383,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="S">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnS:" destination="khD-bQ-smi" eventType="touchUpInside" id="iD8-TN-3t5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIz-nf-qr2">
                                 <rect key="frame" x="86" y="594" width="45" height="45"/>
@@ -334,6 +395,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="Z">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnZ:" destination="khD-bQ-smi" eventType="touchUpInside" id="g7g-NQ-Jg9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-Rb-4tL">
                                 <rect key="frame" x="30" y="594" width="45" height="45"/>
@@ -343,6 +407,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="Y">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnY:" destination="khD-bQ-smi" eventType="touchUpInside" id="O6B-P0-VsD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-tZ-sD6">
                                 <rect key="frame" x="138" y="541" width="45" height="45"/>
@@ -352,6 +419,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="U">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnU:" destination="khD-bQ-smi" eventType="touchUpInside" id="kgh-SQ-XfB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsB-4q-mNK">
                                 <rect key="frame" x="191" y="541" width="45" height="45"/>
@@ -361,6 +431,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="V">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnV:" destination="khD-bQ-smi" eventType="touchUpInside" id="JsE-Qi-bkH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-nM-AyS">
                                 <rect key="frame" x="245" y="541" width="45" height="45"/>
@@ -370,6 +443,9 @@ Kie Ogiya</string>
                                 <state key="normal" title="W">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnW:" destination="khD-bQ-smi" eventType="touchUpInside" id="2Cz-Ey-a9e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I5-c3-azS">
                                 <rect key="frame" x="298" y="541" width="45" height="45"/>
@@ -379,9 +455,28 @@ Kie Ogiya</string>
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnX:" destination="khD-bQ-smi" eventType="touchUpInside" id="ewP-SS-R2N"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-7A-jTl">
-                                <rect key="frame" x="51" y="220" width="55" height="61"/>
+                                <rect key="frame" x="29" y="168" width="55" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="Wb1-M7-Gg7">
+                                <rect key="frame" x="85" y="220" width="55" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="6Xv-8w-dFG">
+                                <rect key="frame" x="148" y="168" width="55" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="Sl4-eQ-EHF">
+                                <rect key="frame" x="201" y="220" width="55" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="Z1S-j9-CdA">
+                                <rect key="frame" x="254" y="168" width="55" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wJ-Jx-XKJ">
@@ -519,11 +614,27 @@ Kie Ogiya</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee_right" translatesAutoresizingMaskIntoConstraints="NO" id="Wko-LH-v5n">
+                                <rect key="frame" x="299" y="234" width="55" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vN6-hZ-DrB"/>
                     </view>
                     <connections>
+                        <outlet property="balloon1" destination="sB3-lS-NPX" id="Q6e-3m-btn"/>
+                        <outlet property="balloon2" destination="hON-pf-8gf" id="itH-C9-Uhj"/>
+                        <outlet property="balloon3" destination="gcb-EZ-5ja" id="zay-6k-CEq"/>
+                        <outlet property="balloon4" destination="Z8B-7i-b9Z" id="FVc-Se-48v"/>
+                        <outlet property="balloon5" destination="La4-nQ-jlg" id="OUO-dG-XGd"/>
+                        <outlet property="balloon6" destination="o0F-yd-oHF" id="VDw-fb-M5S"/>
+                        <outlet property="bee1" destination="RtN-7A-jTl" id="Nlt-GW-XxE"/>
+                        <outlet property="bee2" destination="Wb1-M7-Gg7" id="oCE-bs-nkw"/>
+                        <outlet property="bee3" destination="6Xv-8w-dFG" id="KOy-0Z-0T8"/>
+                        <outlet property="bee4" destination="Sl4-eQ-EHF" id="IGz-lS-aHz"/>
+                        <outlet property="bee5" destination="Z1S-j9-CdA" id="cBe-fy-vgU"/>
+                        <outlet property="bee6" destination="Wko-LH-v5n" id="dMX-0b-V6R"/>
                         <outlet property="l1" destination="ofe-KB-38H" id="jWa-DI-idq"/>
                         <outlet property="l2" destination="9jN-Ya-JdQ" id="NYO-Dm-eQf"/>
                         <outlet property="l3" destination="HKW-PA-B4I" id="Idp-hZ-UCI"/>
