@@ -293,7 +293,7 @@ class ViewController: UIViewController {
         if isInWord(letter: button){
             if lettersFound == word.word.count{
                 
-                showAlert(title: "Congratulations", message: "You won the game!")
+                showAlert(title: "Congratulations", message: "You won the game! The word was \"\(word.word.uppercased())\"!")
                 loadView()
                 viewDidLoad()
                 
